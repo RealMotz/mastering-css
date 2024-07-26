@@ -21,6 +21,17 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-family: 'Lora', serif;
+}
+
+p {
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-size: 0.8em;
+    line-height: 24px;
+}
+
 .subtitle {
     font-weight: 700;
     color: #1792d2;
@@ -99,4 +110,69 @@ nav a:focus {
     nav li {
         margin: .5em 0;
     }
+}
+
+.container-main {
+    display: flex;
+    padding: 2rem;
+}
+
+/* main */
+
+.item {
+    width: 100%;
+    display: flex;
+}
+
+.item-image {
+    width: 25%;
+}
+
+.item-image img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.item-image p {
+    color: #707070;
+}
+
+.item-text {
+    width: 75%;
+    margin: 0 1rem;
+}
+
+.item-text h2 {
+    color: #143774;
+}
+
+.item-text p {
+    color: #707070;
+}
+
+a {
+    text-decoration: none;
+    color: #1792D2;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* sidebar */
+
+.sidebar-item {
+    border: 1em solid #EBEBEB;
+}
+
+.sidebar-item-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sidebar-item img {
+    width: 100%;
+}
+
+.sidebar-item h2 {
+    text-transform: uppercase;
 }
