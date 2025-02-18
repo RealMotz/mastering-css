@@ -1,0 +1,90 @@
+h1,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 60px;
+}
+
+p {
+    font-size: 1.5rem;
+    height: 100%;
+    line-height: 20px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.card {
+    width: 300px;
+    background-color: pink;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    background: linear-gradient(45deg, #4339A0,#4CC4C8);
+    border-radius: 5px;
+    padding: 4em;
+}
+
+.number {
+    width: 90%;
+    display: inline-block;
+}
+
+.stylized-number {
+    display: inline-block;
+    margin-right: -20px;
+    position: relative;
+}
+
+.one {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 100%;
+    z-index: 10;
+    margin: -10px;
+}
+
+.one-top {
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    transform: rotate(45deg);
+    top: 3px;
+    right: 23px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.one-body {
+    background-color: #FFF;
+    width: 25px;
+    height: 100px;
+    border-radius: 5px;
+    z-index: 11;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+}
+
+.zero {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 25px solid #FFF;
+    z-index: 1;
+}
+
+.number div:last-child{
+    z-index: 0;
+}
+
+.shadow-cover {
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2)
+}
