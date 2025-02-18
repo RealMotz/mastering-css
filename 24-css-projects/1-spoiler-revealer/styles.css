@@ -1,0 +1,31 @@
+:root {
+    --bg-color: #e8eaed;
+    --spoiler-color: #000;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.post {
+    background-color: var(--bg-color);
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.spoiler {
+    background-color: var(--spoiler-color);
+    color: var(--spoiler-color);
+    transition: all 0.5s ease-in; 
+    cursor: pointer;
+}
+
+.spoiler:hover {
+    background-color: initial;
+}
