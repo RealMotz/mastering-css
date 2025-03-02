@@ -1,0 +1,121 @@
+/* ================ */
+/* My solution */
+/* ================ */
+
+/* :root {
+    --primary-color: #175af4;
+    --bg-color: #f4f4f4;
+} */
+
+/* body {
+    font-family:Arial, Helvetica, sans-serif;
+} */
+
+/* .page-header {
+    background-color: var(--bg-color);
+    padding: 0.1em;
+} */
+
+/* .page-header > h1 {
+    background-color: var(--primary-color);
+    color: #fff;
+} */
+
+/* .main > h2 {
+    background-color: #fff;
+} */
+
+/* .social-links {
+    background-color: #fff;
+    margin: 1em 0;
+} */
+
+/* ================ */
+/* Book solution */
+/* ================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: #0072b0;
+  --column-width: 1080px;
+}
+
+body {
+  margin: unset;
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: var(--column-width);
+  margin-inline: auto;
+  /* margin: 0 auto; */
+}
+
+.page-header {
+  color: #fff;
+  background-color: var(--brand-color);
+}
+
+.page-header h1 {
+  /* max-width: var(--column-width); */
+  /* margin: 0 auto; */
+  /* width: calc(var(--column-width) - 3em); */
+  max-inline-size: var(--column-width);
+  margin-inline: auto;
+  margin: 0 auto;
+  /* padding-inline: 1.5rem; */
+  padding: 1em 1.5rem;
+}
+
+.main {
+  padding: 1em 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+
+.social-links {
+  /* outline: 1px solid #ccc; */
+  /* margin: 1em 0; */
+  max-inline-size: 25em;
+  padding: 1em 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+
+.button-link {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  background-color: var(--brand-color);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* margin: 1em 0; */
+}
+
+/* .button-link + .button-link {
+    margin-top: 1em;
+} */
+
+.sponsor-link {
+  display: block;
+  text-decoration: none;
+  color: var(--brand-color);
+  font-weight: bold;
+}
+
+.expanded-child {
+  background-color: rgb(157, 102, 29);
+  height: 50px;
+  margin-inline: -2em;
+}
+
+.stack > * + * {
+  margin-block-start: 1.5em;
+}

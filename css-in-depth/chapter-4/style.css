@@ -1,0 +1,173 @@
+:root {
+    --main-color: #709b90;
+    --btn-color: #CB6B5A;
+    --nav-color: #5F4B44;
+    --gap-size: 1.5em;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: unset;
+  background-color: var(--main-color);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.stack > * + * {
+  margin-block-start: 1.5em;
+}
+
+.container {
+  max-inline-size: 1080px;
+  margin-inline: auto;
+}
+
+.site-nav {
+    display: flex;
+    padding: unset;
+    list-style-type: none;
+    background-color: var(--nav-color);
+    padding: 0.5em;
+    gap: var(--gap-size);
+}
+
+.site-nav > li > a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--btn-color);
+    padding: 0.5em 1em;
+    display: block;
+}
+
+.site-nav > .nav-right {
+    margin-inline-start: auto;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap-size);
+}
+
+.tile {
+    background-color: white;
+    padding: 1.5em;
+}
+
+.column-main {
+    flex: 2;
+}
+
+.column-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size);
+}
+
+.column-sidebar > .tile {
+  flex: 1;
+}
+
+.login-form > h3 {
+  margin: 0;
+  font-size: 0.9em;
+  text-align: end;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.login-form input:not([type="checkbox"]):not([type="radio"]) {
+  display: block;
+  inline-size: 100%;
+}
+
+.login-form button[type="submit"] {
+  margin-block-start: 1em;
+  background-color: white;
+  border: 1px solid var(--btn-color);
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+}
+
+.stack {
+  align-content: center;
+}
+
+.cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.7;
+}
+
+.cost-currency {
+  font-size: 2rem;
+}
+
+.cost-dollars {
+  font-size: 4em;
+}
+
+.cost-cents {
+  font-size: 1.5em;
+  align-self: flex-start;
+}
+
+.cta-button {
+  display: block;
+  background-color: var(--btn-color);
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* wrap example */
+/* Common Styles */
+.content,
+.content1,
+.content2 {
+  color: #fff;
+  font: 100 24px/100px sans-serif;
+  height: 150px;
+  width: 400px;
+  text-align: center;
+}
+
+.content div,
+.content1 div,
+.content2 div {
+  height: 50%;
+  width: 200px;
+}
+.red {
+  background: orangered;
+}
+.green {
+  background: yellowgreen;
+}
+.blue {
+  background: steelblue;
+}
+
+/* Flexbox Styles */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.content1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
