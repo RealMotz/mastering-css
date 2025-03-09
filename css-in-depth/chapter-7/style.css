@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #888;
+  font-size: clamp(0.9rem, 0.5svw + 0.6em, 1.125rem);
+}
+
+html, body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+
+#header {
+  padding: 1em 1.5em;
+  font-size: 1.1rem;
+}
+
+.title > * {
+  margin: 0;
+}
+
+.slogan {
+  color: var(--secondary-color);
+}
+
+/* Nav */
+.menu {
+  margin: 0 1em;
+}
+
+.menu-toggle {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0.2em 0.6em;
+}
+
+a {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: darkblue;
+}
+
+/* Hero */
+#hero {
+  background-image: url('./hero.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100px;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 3em;
+}
+
+/* Main */
+.main {
+  font-size: 1.1rem;
+  margin: 1em;
+}
