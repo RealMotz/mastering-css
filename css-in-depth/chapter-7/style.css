@@ -5,67 +5,65 @@
 }
 
 :root {
-  --secondary-color: #888;
   font-size: clamp(0.9rem, 0.5svw + 0.6em, 1.125rem);
 }
 
-html, body {
+body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Header */
-
-#header {
-  padding: 1em 1.5em;
-  font-size: 1.1rem;
+a:link {
+  color: #1476b8;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.title > * {
-  margin: 0;
+a:visited {
+  color: #1430b8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+.page-header {
+  padding: 0.4em 1em;
+  background-color: #fff;
+}
+
+.title > h1 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-block: 0.2em;
 }
 
 .slogan {
-  color: var(--secondary-color);
-}
-
-/* Nav */
-.menu {
-  margin: 0 1em;
-}
-
-.menu-toggle {
-  border: 1px solid var(--secondary-color);
-  border-radius: 5px;
-  background-color: #fff;
-  padding: 0.2em 0.6em;
-}
-
-a {
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-  color: darkblue;
+  color: #888;
+  font-size: 0.875em;
+  margin: 0;
 }
 
 /* Hero */
-#hero {
+.hero {
+  padding: 2em 1em;
+  text-align: center;
   background-image: url('./hero.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100px;
+  background-size: 100%;
   color: #fff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin: 0;
-  padding: 3em;
+  text-shadow: 0.1em 0.1em 0.3em #000;
 }
 
 /* Main */
 .main {
-  font-size: 1.1rem;
-  margin: 1em;
+  font-size: 1rem;
+}
+
+.subtitle {
+  margin-block: 1.5em;
+  font-size: 0.875em;
+  text-transform: uppercase;
 }
