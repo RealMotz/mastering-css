@@ -18,6 +18,40 @@
             </p>
         </div>
     </header>
+    <main class="container">
+        <div class="col-main">
+            <nav>
+                <div class="dropdown" id="dropdown">
+                    <button type="button" class="dropdown-toggle" id="dropdown-toggle">Main Menu</button>
+                    <div class="dropdown-menu">
+                        <ul class="submenu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/coffees">Coffees</a></li>
+                            <li><a href="/brewers">Brewers</a></li>
+                            <li><a href="/specials">Specials</a></li>
+                            <li><a href="/about">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h1>Wombat Coffee Roasters</h1>
+        </div>
+
+
+        <aside class="col-sidebar">
+            <div class="affix">
+                <ul class="submenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/coffees">Coffees</a></li>
+                    <li><a href="/brewers">Brewers</a></li>
+                    <li><a href="/specials">Specials</a></li>
+                    <li><a href="/about">About us</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
     <div class="modal" id="modal" role="dialog" aria-modal="true">
         <div class="modal-backdrop"></div>
         <div class="modal-body">
@@ -34,14 +68,17 @@
             </form>
         </div>
     </div>
-    <main class="container">
-        <h1>Wombat Coffee Roasters</h1>
-    </main>
 
     <script type="text/javascript">
         const button = document.getElementById('open');
         const close = document.getElementById('close');
         const modal = document.getElementById('modal');
+        const dropdownToggle = document.getElementById("dropdown-toggle");
+        const dropdown = document.getElementById("dropdown");
+
+        dropdownToggle.addEventListener("click", function (event) {
+            dropdown.classList.toggle("is-open");
+        });
 
         button.addEventListener('click', function (event) {
             modal.classList.add('is-open');
