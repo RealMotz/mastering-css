@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dropdown</title>
+    <link href="./dropdown-style.css" rel="stylesheet" />
+    <script type="module" defer>
+      const toggle = document.querySelector(".dropdown__toggle");
+      toggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        const dropdown = e.target.parentNode;
+        dropdown.classList.toggle("is-open");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button class="dropdown__toggle">Main menu</button>
+      <div class="dropdown__drawer">
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/coffees">Coffees</a></li>
+          <li><a href="/brewers">Brewers</a></li>
+          <li><a href="/specials">Specials</a></li>
+          <li><a href="/about">About us</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
