@@ -8,8 +8,8 @@
 }
 
 @layer layout {
-  .l-page {
-    margin-inline: 1rem;
+  .l-page > * {
+    container: layout/inline-size;
   }
 
   @media (min-width: 800px) {
@@ -32,7 +32,7 @@
     margin-inline: auto;
   }
 
-  @media (min-width: 450px) {
+  @container layout (min-width >= 450px) {
     .media {
       display: flex;
       gap: 1.5em;
